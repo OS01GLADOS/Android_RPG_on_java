@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopScreen"
+    android:background="@color/white"
+
+    >
+
+    <ImageView
+        android:id="@+id/shopTop"
+        android:layout_width="417dp"
+        android:layout_height="269dp"
+        android:src="@drawable/shop_img"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/shopTop"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:id="@+id/shopSaveAndExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and exit"
+            android:onClick="onSaveAndExitClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/shopStartBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Battle"
+            android:onClick="onStartClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/shopPlayerEquip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your equipment:\nWeapon: \nShield: "
+        app:layout_constraintStart_toStartOf="@+id/shopMoney"
+        app:layout_constraintTop_toBottomOf="@+id/menu"></TextView>
+
+    <TextView
+        android:id="@+id/shopMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="money: "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopPlayerEquip"></TextView>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shop Items"
+        app:layout_constraintStart_toStartOf="@+id/shopMoney"
+        app:layout_constraintTop_toBottomOf="@+id/shopMoney"></TextView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/label">
+
+        <ListView
+            android:id="@+id/shopItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/labelEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="long click to select..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"></TextView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

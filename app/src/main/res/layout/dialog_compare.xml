@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/purple_700"
+    >
+    <TextView
+        android:id="@+id/Label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your item:"
+        android:textSize="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/Label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item to compare:"
+        android:textSize="24dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/PlayerItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="yItem"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/Label1"
+        app:layout_constraintTop_toBottomOf="@+id/Label1"></TextView>
+
+    <TextView
+        android:id="@+id/CompItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="cItem"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Label2"
+        app:layout_constraintTop_toBottomOf="@+id/Label2"></TextView>
+
+    <TextView
+        android:id="@+id/Label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerItemName"></TextView>
+
+    <TextView
+        android:id="@+id/PlayerItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pValue"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/PlayerItemName"
+        app:layout_constraintTop_toBottomOf="@+id/Label3"></TextView>
+
+    <TextView
+        android:id="@+id/CompItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cValue"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/CompItemName"
+        app:layout_constraintTop_toBottomOf="@+id/Label3"></TextView>
+
+    <TextView
+        android:id="@+id/labelElem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Element"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CompItemValue"></TextView>
+
+    <TextView
+
+        android:id="@+id/PlayerItemElem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="pElem"
+        app:layout_constraintStart_toStartOf="@+id/PlayerItemValue"
+        app:layout_constraintTop_toBottomOf="@+id/labelElem"/>
+
+    <TextView
+
+        android:id="@+id/CompItemElem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cElem"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/CompItemValue"
+        app:layout_constraintTop_toBottomOf="@+id/labelElem">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

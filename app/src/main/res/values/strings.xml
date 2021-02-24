@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EPIC WARRIOR 12</string>
+    <string name="shop_context_menu_buy">Buy</string>
+    <string name="shop_context_menu_compare">Compare</string>
+</resources>

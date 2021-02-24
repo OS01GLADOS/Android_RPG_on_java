@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ShopBuy"
+        android:title="@string/shop_context_menu_buy" />
+    <item
+        android:id="@+id/ShopCompare"
+        android:title="@string/shop_context_menu_compare" />
+
+</menu>
