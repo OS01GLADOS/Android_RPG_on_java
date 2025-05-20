@@ -1,2 +1,2 @@
-# very_simple_rpg on java
-was created for exam
+Game where you encounter different forest monsters
+but mostly slimes)
